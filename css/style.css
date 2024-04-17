@@ -1,0 +1,199 @@
+:root{
+    --primary-color: #174F50;
+    --secondary-color: #DFD6C7;
+    --third-color: #FFDAA0;
+    --white-color: #fdf5ef;
+}
+
+*{
+    margin:0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* h1{
+    color: var(--white-color);
+    font-size: 4rem;
+}
+
+h2{
+    color: var(--white-color);
+    font-size: 2rem;
+} */
+ 
+body, html{
+    font-family: Arial, Helvetica, sans-serif; /*provisoriamente*/
+}
+
+header{
+    background-color: var(--primary-color);
+    padding: 2vh 0;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+
+}
+
+
+/*Barra de navegacion*/
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: right;
+}
+
+nav ul li{
+    display: inline-block;
+}
+
+nav ul li:first-child{
+    margin-left: 0;
+}
+
+nav ul li:last-child{
+    margin-right: 1vw;
+}
+
+nav ul li a, nav>a{
+    display: block;
+    padding: 10px 20px;
+    color: var(--white-color);
+    border-radius: 8px;
+
+}
+
+nav ul li a:hover{
+    background-color: var(--secondary-color);
+    color:black;
+}
+
+
+/*Banner*/
+#banner{
+    background-image: url('../static/img/banner-evento.jpg');
+    background-size: cover;
+    background-position: cover;
+    height: 100vh;
+    box-shadow: inset 0 0 0 2000px rgba(124, 94, 118, 0.5);
+}
+
+/*posiciona el contenedor de los titulos*/
+.container{
+    max-width: 1200px;  
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.container h1{
+    color: var(--white-color);
+    font-size: 3.5rem;
+}
+
+.container h2{
+    color: var(--white-color);
+    font-size: 1.5rem;
+}
+
+/*alinea el boton contacta con nosotros*/
+.card-banner{
+    margin: 0 auto;
+    display: flex;
+    text-align: center;
+    justify-content: center; 
+    flex-direction: column;  /**/
+    height: 100%;
+}
+
+
+/*estilos del boton*/
+.button{
+    background-color: var(--primary-color);
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: none;
+    color: var(--white-color);
+    text-decoration: none;
+    transform: background-color 0.3s ease;
+   
+}
+
+.button:hover{
+    background-color: var(--third-color);
+    color:black;
+}
+
+@keyframes pulse{
+    0%{
+        text-replace: scale(1);
+    }50%{
+        transform: scale(1.1);
+    }100%{
+        transform: scale(1);
+    }
+}
+
+.button:hover{
+    animation: pulse 0.5s infinite alternate;
+}
+
+#banner {
+    display:none;
+}
+#eventos {
+    display:none;
+}
+#menu {
+    display:none;
+}
+#galeria {
+    display:none;
+}
+#experiencias {
+    display:none;
+}
+#nosotros {
+    display:none;
+}
+
+#contacto {
+    /* display:none;*/
+}
+.contacto {
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    position:relative; 
+    margin: 100px 50px;
+    padding: 50px;
+    background-color: var(--secondary-color);
+
+}
+footer {
+    display:flex;
+    justify-content: space-around;
+    background-color: var(--third-color);
+    margin: 0px;
+    padding: 20px;
+    color: var(--primary-color);
+    position: fixed;
+    bottom:0;
+    width:100%;
+
+}
