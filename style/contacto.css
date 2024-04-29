@@ -1,0 +1,135 @@
+.container {
+   min-height: 90vh;
+   background-color: #C1AD70;
+    padding: 1em;
+}
+
+/*Contacto*/
+section.formcontacto {
+    width: 100%;
+ }
+.formcontacto__contacto{
+    display: flex;
+    background-color: var(--cor-de-fondo_alt);
+    padding: 0em 2em 0em 2em;
+    gap: 1em;
+}
+.formcontacto--izquierda {
+    width: 40%;
+}
+.formcontacto__img {
+    width: 100%;
+    border-radius: 40px;
+}
+.formcontacto__text {
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+}
+.formcontacto__title {
+    font-size: 1.5em;
+    margin-bottom: 1em;
+}
+.formcontato__subtext {
+    font-size: 1em;
+    font-weight: normal;
+    padding-bottom: 1em;
+}
+.formcontacto__form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1em;
+    gap: 1em;
+}
+.formcontacto__input {
+    border:none;
+    padding: 1em;
+    border-bottom: 2px solid #EAF2FD;
+    border-radius: 10px;
+    display: block;
+    width: 100%;
+    margin-top: .5em;
+}
+.formcontacto__input:hover {
+    border:none;
+    border-bottom: 2px solid #2A7AE4;    
+}
+.formcontacto__textarea {
+    display: block;
+    width: 100%;
+    border:none;
+    padding: 1em;
+    border-bottom: 2px solid #EAF2FD;
+    resize: none;
+    border-radius: 10px;
+
+}
+.campo__etiqueta {
+    font-weight: 500;
+    line-height: 20px;
+}
+.formulario__campo {
+    margin-bottom: 1em;
+}
+.formcontacto__textarea:hover {
+    border:none;
+    border-bottom: 2px solid #2A7AE4;    
+}
+.formcontacto__boton {
+    border: 1px solid #2A7AE4;
+    width: 116px;
+    height: 51px;
+    padding: 0.8em;
+    cursor: pointer;
+    background-color: #2A7AE4;
+    border: 1px solid #FFF;
+    color: #FFF;  
+}
+.formcontacto__boton:hover {
+    color:#FFF;
+    background-color: var(--cor-de-link);
+}
+.mensaje-error {
+    display: block;
+    margin-top: 5px;
+    font-weight: bolder;
+    font-size: .9em;
+    color: red;
+}
+/* @media queris abajo */
+
+@media (max-width: 768px) {
+
+
+    .formcontacto__title {
+        font-size: 1.6em;
+        margin-top: 0.9em;
+    }
+
+    
+    .formcontacto__img {
+        display: none;
+    }
+
+    .formcontacto__contacto {
+        padding: 1.5em;
+    }
+}
+
+
+/*Mobile*/
+@media (max-width: 425px) {
+
+    .formcontacto__title {
+        font-size: 1.2em;
+        margin-top: 0.6em;
+    }
+
+    .formcontacto__contacto {
+        padding: 0.1em;
+    }
+    section.formcontacto {
+        padding: 0 1em 1em 1em;
+    }
+
+}
