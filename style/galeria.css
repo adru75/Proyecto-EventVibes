@@ -1,0 +1,18 @@
+     /* Estilos adicionales para la galería */
+     .imagen {
+        margin-bottom: 20px;
+        width: 100%;
+        height: auto;
+        border-radius: 10px; /* Agregamos un border radius a las imágenes */
+    }
+
+    h1 {
+        color: #0B2E2E;
+    }
+
+    .navbar {
+        position: sticky;
+        top: 0;
+        z-index: 1000; /* Asegura que la navbar esté por encima de las imágenes */
+        background-color: #174F50;
+    }
