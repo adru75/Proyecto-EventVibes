@@ -72,6 +72,12 @@
     word-wrap: break-word;
     border-radius: 10px;
     margin-top: 7em;
+    color: #fbe4be;
+  }
+
+  #experiencias p{
+    font-weight: lighter;
+    margin-top: 1.5em;
   }
 
   #experiencias h2 {
@@ -89,8 +95,8 @@
   }
   
   .imgexp {
-    width: 100px;
-    height: 100px;
+    width: 170px;
+    height: 170px;
     object-fit: cover;
     border-radius: 50%;
     float: left;
@@ -110,33 +116,16 @@
     float: left;
     padding: 10px;
     margin-top: 2em;
-  }
-  
-  .clientes ul li:nth-child(1) {
     background-color: rgb(102, 80, 80);
     width: 50vw;
     height: auto;
     border-radius: 2%;
-    float: left;
   }
   
   .clientes ul li:nth-child(2) {
-    background-color: rgb(102, 80, 80);
-    width: 50vw;
-    height: auto;
-    border-radius: 2%;
     float: right;
   }
-  .clientes ul li:nth-child(3) {
-    background-color: rgb(102, 80, 80);
-    width: 50vw;
-    height: auto;
-    border-radius: 2%;
-  }
+
   .clientes ul li:nth-child(4) {
-    background-color: rgb(102, 80, 80);
-    width: 50vw;
-    height: auto;
-    border-radius: 2%;
     float: right;
   }
