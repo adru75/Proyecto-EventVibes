@@ -76,14 +76,19 @@ section.formcontacto {
     border-bottom: 2px solid #2A7AE4;    
 }
 .formcontacto__boton {
-    border: 1px solid #2A7AE4;
-    width: 116px;
-    height: 51px;
-    padding: 0.8em;
     cursor: pointer;
     background-color: #2A7AE4;
     border: 1px solid #FFF;
     color: #FFF;  
+
+    padding: 5px 30px;
+    text-decoration: none;
+    border-radius: 80px;
+    font-family: 'Jaldi', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+
+
 }
 .formcontacto__boton:hover {
     color:#FFF;
