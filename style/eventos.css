@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Jaldi&family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Asegura que la navbar esté por encima de las imágenes */
+    background-color: #174F50;
+}
+
+
+h1 {
+    color: #0B2E2E;
+    margin-left: 20px; /* Agrega un margen izquierdo de 20px al título */
+}
+
+
+
+.eventos-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.evento {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+
+.evento img {
+    max-width: 50%;
+    height: auto;
+}
+
+.evento .image img{
+    transition: transform 0.3s ease;
+}
+.evento .image img:hover {
+    transform: scale(1.1); /* Escalamos la imagen al 110% en hover */
+}
+
+.evento-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 20px;
+    background-color:  #eee5d6;;
+}
+
+.evento:nth-child(odd) .evento img {
+    order: 0; /* La imagen a la izquierda en eventos impares */
+}
+
+.evento:nth-child(odd) .evento-info {
+    order: 1; /* Nombre y descripción a la derecha en eventos impares */
+}
+
+.evento:nth-child(even) .evento img {
+    order: 2; /* La imagen a la derecha en eventos pares */
+}
+
+.evento:nth-child(even) .evento-info {
+    order: -1; /* Nombre y descripción a la izquierda en eventos pares */
+}
+
+.evento-name {
+    /*font-size: 24px;*/
+    margin-bottom: 10px;
+    color: #0B2E2E;
+    font-size: 2.5rem;;
+}
+
+.evento-descripcion {
+    font-size:  1.5rem;
+}
+
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 2rem; /* Tamaño de fuente más pequeño para pantallas pequeñas */
+    }
+    .evento-name {
+        font-size: 1.5rem; /* Tamaño de fuente más pequeño para pantallas pequeñas */
+    }
+    .evento-descripcion {
+        font-size: 1rem; /* Tamaño de fuente más pequeño para pantallas pequeñas */
+    }
+}
