@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Jaldi&family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+h1{
+    justify-content: center;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.card-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 100px;
+}
+
+.card{
+    width: 325px;
+    background-color: #eee5d6;;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
+    margin: 20px;
+}
+
+.card img{
+    width: 100%;
+    height: 210px;
+}
+
+.card-content{
+    padding: 16px;
+}
+
+.card-content h3{
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+
+.card-content p{
+    color: #666;
+    font-size: 15px;
+    line-height: 1.3;
+}
+
+.card-content .btn{
+    display: inline-block;
+    padding: 8px 16px;
+    margin: 0 auto 16px; 
+    background-color: #C1AD70;
+    text-decoration: none;
+    border-radius: 5px;
+    color: #f2f2f2;
+
+    margin-top: auto; /* Alineamos el botón al final del contenedor */
+    margin-bottom: 16px; /* Agregamos un margen inferior */
+    margin-left: auto; /* Alineamos el botón al final del contenedor */
+    margin-right: auto; /* Alineamos el botón al final del contenedor */
+}
+
+
+.btn:hover{
+    background-color: #C9BB8F;
+    color: #4C4637;
+}
+
+@keyframes pulse{
+    0%{
+        transform: scale(1);
+    }50%{
+        transform: scale(1.1);
+    }100%{
+        transform: scale(1);
+    }
+}
+
+.btn:hover{
+    animation: pulse 0.5s infinite alternate;
+}
