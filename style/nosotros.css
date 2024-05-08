@@ -1,131 +1,158 @@
 #nosotros {
-    display: flex;
-    width: 70%;
-    height: 40%;
-    background-color: rgb(102, 80, 80);
-    margin-left: 15%;
-    margin-right: 15%;
-    word-wrap: break-word;
-    border-radius: 10px;
-    margin-top: 7em;
-  }
-#nosotros h2 { 
-  
-    color: #fbe4be;
-    font-size: 2.2rem;
-    text-align: center;
-    font-style: italic;
-    font-weight: bolder;
+  display: flex;
+  width: 1500px;
+  height: 600px;
+  background-color: #174f50;
+  margin-left: 10%;
+  margin-right: 15%;
+  word-wrap: break-word;
+  border-radius: 10px;
+  margin-top: 7em;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
 }
 
-  #nosotros p {
-    font-size: 1.2em;
-    text-align: justify;
-    flex-wrap: nowrap;
-    color: #fbe4be;
-    margin-top: 2em;
-    font-weight: lighter;
-    margin-left: 22em;
-    margin-right: 1.5em;
-  }
-  
-  /* #nosotros button {
-    display: flex;
-    background-color: #fbe4be;
-    padding: 0.5em 1em;
-    font-family: "Noto Serif Display", serif;
-    font-weight: 600;
-    font-size: 16px;
-    border-radius: 50px;
-    border: none;
-    color: #fdf4e6;
-    text-decoration: none;
-    box-shadow: #464646;
-    margin-left: 45%;
-    margin-bottom: 1em;
-    margin-top: 1em;
-    cursor: pointer;
-  }
-  
-  .nosotros button:hover {
-    background-color: #f8e9cdad;
-    color: #822f74;
-    border-radius: 10px;
-    transform: scale(1.1);
-  } */
-  
-  #nosotros div img {
-    object-fit: cover;
-    float: left;
-    width: 350px;
-    height: 350px;
-    margin-left: 2em;
-    border-style: groove;
-    margin-top: 3.5em;
-  }
- 
-  #experiencias{
-    width: 70%;
-    height: 40%;
-    margin-left: 15%;
-    margin-right: 15%;
-    word-wrap: break-word;
-    border-radius: 10px;
-    margin-top: 7em;
-    color: #fbe4be;
-  }
+#nosotros h2,
+#nosotros p,
+#experiencias h2,
+#experiencias p {
+  text-align: center;
+  color: #fbe4be;
+}
 
-  #experiencias p{
-    font-weight: lighter;
-    margin-top: 1.5em;
-  }
+#nosotros h2 {
+  font-size: 2.2rem;
+  font-style: italic;
+  font-weight: bolder;
+  margin-left: 50%;
+}
 
-  #experiencias h2 {
-    width: 22vw;
-    height: fit-content;
-    color: #fbe4be;
-    font-size: 2.2rem;
-    text-align: center;
-    font-style: italic;
-    font-weight: bolder;
-    background-color:rgb(102, 80, 80);
-    margin-left: 35%;
-    border-radius: 1cm;
+#nosotros p {
+  font-size: 1.3em;
+  flex-wrap: nowrap;
+  margin-top: 2em;
+  font-weight: lighter;
+  margin-left: 50%;
+}
 
-  }
-  
+#nosotros div img {
+  object-fit: cover;
+  float: left;
+  width: 500px;
+  height: 500px;
+  margin-left: 5%;
+  border-style: groove;
+}
+
+#experiencias {
+  width: 80%;
+  height: 40%;
+  margin-left: 15%;
+  margin-right: 15%;
+  word-wrap: break-word;
+  border-radius: 10px;
+  margin-top: 7em;
+  color: #fbe4be;
+}
+
+#experiencias p {
+  font-weight: lighter;
+  font-size: 1.2em;
+  margin-top: 5%;
+  margin-left: 25%;
+  margin-right: 10px;
+}
+
+#experiencias h2 {
+  width: 800px;
+  height: fit-content;
+  font-size: 2.2rem;
+  font-style: italic;
+  font-weight: bolder;
+  background-color: #174f50;
+  margin-left: 25%;
+  border-radius: 0.5cm;
+}
+
+.imgexp {
+  width: 170px;
+  height: 170px;
+  object-fit: cover;
+  border-radius: 50%;
+  float: left;
+  outline-style: solid;
+  margin-left: 3%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.clientes ul {
+  flex-direction: column;
+  float: right;
+  list-style: none;
+  margin-bottom: 5em;
+  margin-top: 2em;
+  padding: 1em;
+  text-align: center;
+}
+
+.clientes ul li {
+  float: left;
+  padding: 10px;
+  margin-top: 2em;
+  background-color: #174f50;
+  width: 850px;
+  height: fit-content;
+  border-radius: 2%;
+  border-style: ridge;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.clientes ul li:nth-child(2) {
+  float: right;
+}
+
+.clientes ul li:nth-child(4) {
+  float: right;
   .imgexp {
-    width: 170px;
-    height: 170px;
-    object-fit: cover;
-    border-radius: 50%;
-    float: left;
+    margin-top: 10%;
   }
-  
-  .clientes ul {
-    flex-direction: column;
-    float: right;
-    list-style: none;
-    margin-bottom: 5em;
-    margin-top: 2em;
-    padding: 1em;
-    text-align: center;
-  }
-  
-  .clientes ul li{
-    float: left;
-    padding: 10px;
-    margin-top: 2em;
-    background-color: rgb(102, 80, 80);
-    width: 50vw;
-    height: auto;
-    border-radius: 2%;
-  }
-  
-  .clientes ul li:nth-child(2) {
-    float: right;
-  }
+}
 
-  .clientes ul li:nth-child(4) {
-    float: right;
+@media only screen and (max-width: 768px) {
+  #nosotros,
+  #experiencias {
+    width: 100%;
+    height: fit-content;
+    margin-top: 10%;
+    margin-left: 0;
+    margin-right: 5%;
+    border-radius: 0;
   }
+  #nosotros div img {
+    width: 90vw;
+    height: 15vh;
+  }
+  #nosotros p {
+    float: inline-end;
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+  #nosotros h2 {
+    margin-left: 0;
+  }
+  #experiencias h2 {
+    margin-left: 0;
+    width: 100%;
+    border-radius: 15px;
+  }
+  #experiencias p {
+    margin-left: 0;
+    width: 100%;
+    border-radius: 15px;
+  }
+  .clientes ul li {
+    width: 100%;
+    border-radius: 10px;
+  }
+}
