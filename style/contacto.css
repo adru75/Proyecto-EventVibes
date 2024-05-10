@@ -2,17 +2,20 @@
    min-height: 90vh;
    background-color: #C1AD70;
     padding: 1em;
+    width: 100%;
 }
 
 /*Contacto*/
 section.formcontacto {
     width: 100%;
+    margin-top: 5rem;
  }
 .formcontacto__contacto{
     display: flex;
     background-color: var(--cor-de-fondo_alt);
     padding: 0em 2em 0em 2em;
     gap: 1em;
+ 
 }
 .formcontacto--izquierda {
     width: 40%;
@@ -53,6 +56,7 @@ section.formcontacto {
 .formcontacto__input:hover {
     border:none;
     border-bottom: 2px solid #2A7AE4;    
+
 }
 .formcontacto__textarea {
     display: block;
@@ -64,6 +68,20 @@ section.formcontacto {
     border-radius: 10px;
 
 }
+
+.formcontacto__input, .formcontacto__textarea {
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+    outline: none;
+    border: 5px solid #DDDDDD;
+  }
+   
+  .formcontacto__input:focus, .formcontacto__textarea:focus {
+    box-shadow: 0 0 15px rgba(81, 203, 238, 1);
+    border: 1px solid rgba(81, 203, 238, 1);
+  }
 .campo__etiqueta {
     font-weight: 500;
     line-height: 20px;
@@ -101,10 +119,24 @@ section.formcontacto {
     font-size: .9em;
     color: red;
 }
+.boton_contacto {
+    border-radius: 20px;
+    padding: 1rem;
+    font-size: 1.2rem;
+    max-width: 300px;
+}
+
+.footer {
+padding: 20px;}
 /* @media queris abajo */
 
 @media (max-width: 768px) {
 
+    .container {
+        margin:0;
+        padding: 0;
+        width: 100% !important;
+    }
 
     .formcontacto__title {
         font-size: 1.6em;
@@ -125,16 +157,38 @@ section.formcontacto {
 /*Mobile*/
 @media (max-width: 425px) {
 
+    
+    .container {
+        margin:0;
+    }
+
     .formcontacto__title {
         font-size: 1.2em;
-        margin-top: 0.6em;
+        margin-top: 3em;
     }
 
+    .formcontato__subtext {
+        font-size: 0.5em;
+    }
     .formcontacto__contacto {
-        padding: 0.1em;
+        padding: 0;
+        margin:1rem;
+        gap:0;
     }
     section.formcontacto {
-        padding: 0 1em 1em 1em;
+        padding: 0;
+    }
+    .formcontacto__text {
+        padding: 0;
     }
 
+    .formcontacto__form {
+        gap: 0.1em;
+    }
+    .campo__etiqueta {
+        line-height: 0px;
+    }
+    .formcontacto__input {
+        margin-top: 0em;
+    }
 }
