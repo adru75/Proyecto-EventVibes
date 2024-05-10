@@ -1,0 +1,125 @@
+* {
+    margin:0;
+    padding:0;
+    color:#fff;
+    font-family:Arial;
+  }
+  .body-card{
+    background-color: #174f50;
+    height: 260px;
+    width: 350px;
+    padding-top: 4px;
+    padding-left: 5px;
+    margin-left: 40px;
+    border-radius: 10px;
+   border: solid 3px #C1AD70;
+    
+  }
+  .body-card:hover{
+    background-color: #C1AD70;
+    border-radius: 10px;
+    border: solid 2px #174f50;
+  }
+
+  div#imagen {
+    width: 300px;
+    height: 200px;
+    background-size: cover;
+    background-image: url("../img/cardg.jpeg");
+    margin: 30px 20px;
+    border-radius: 3px;
+  
+ 
+  }
+
+  div#imagen2 {
+    width: 300px;
+    height: 200px;
+    background-size: cover;
+    background-image: url("../img/cardg2.jpeg");
+    margin: 30px auto;
+  }
+
+  div#imagen3 {
+    width: 300px;
+    height: 200px;
+    background-size: cover;
+    background-image: url("../img/cardg3.jpeg");
+    margin: 30px auto;
+  }
+  div#imagen4 {
+    width: 300px;
+    height: 200px;
+    background-size: cover;
+    background-image: url("../img/cardg4.jpeg");
+    margin: 30px auto;
+  }
+  div#imagen5 {
+    width: 300px;
+    height: 200px;
+    background-size: cover;
+    background-image: url("../img/cardg5.jpeg");
+    margin: 30px auto;
+  }
+
+  div#info {
+    position:absolute;
+    overflow:hidden;
+    width: 300px;
+    height: 200px;
+    background-color: rgba(31, 31, 31, 0.9);
+    opacity:0;
+    transition: opacity 0.3s;
+  }
+  
+  div#imagen:hover div#info {
+    opacity:1;
+  }
+  div#imagen2:hover div#info {
+    opacity:1;
+  }
+  div#imagen3:hover div#info {
+    opacity:1;
+  }
+  div#imagen4:hover div#info {
+    opacity:1;
+  }
+  div#imagen5:hover div#info {
+    opacity:1;
+  }
+
+  
+
+  p#descripcion {
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 200px;
+    transition: margin-top 0.4s;
+  }
+  
+  div#imagen:hover p#descripcion {
+    margin-top: 75px;
+  }
+  div#imagen2:hover p#descripcion {
+    margin-top: 75px;
+  }
+  div#imagen3:hover p#descripcion {
+    margin-top: 75px;
+  }
+  div#imagen4:hover p#descripcion {
+    margin-top: 75px;
+  }
+  div#imagen5:hover p#descripcion {
+    margin-top: 75px;
+  }
+  .body-card2{
+    background-color: #174f50;
+    height: 260px;
+    width: 350px;
+    padding-top: 4px;
+    padding-left: 5px;
+    margin-left: 240px;
+    border-radius: 10px;
+   border: solid 3px #C1AD70;
+    margin-top: 30px;
+  }
