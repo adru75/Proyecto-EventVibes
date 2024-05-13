@@ -88,32 +88,32 @@
 
 .clientes ul {
   flex-direction: column;
-  float: right;
   list-style: none;
-  margin-bottom: 5em;
-  margin-top: 2em;
+  margin-bottom: 5%;
+  margin-top: 5%;
   padding: 1em;
   text-align: center;
 }
 
 .clientes ul li {
-  float: left;
   padding: 10px;
   margin-top: 2em;
   background-color: #174f50;
   width: 850px;
-  height: fit-content;
+  height: 275px;
   border-radius: 2%;
   border-style: ridge;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .clientes ul li:nth-child(2) {
-  float: right;
+  margin-left: 35%;
+  height: fit-content;
 }
 
 .clientes ul li:nth-child(4) {
-  float: right;
+  margin-left: 35%;
+  height: fit-content;
   .imgexp {
     margin-top: 10%;
   }
@@ -141,18 +141,17 @@
   #nosotros h2 {
     margin-left: 0;
   }
-  #experiencias h2 {
-    margin-left: 0;
-    width: 100%;
-    border-radius: 15px;
-  }
+  #experiencias h2,
   #experiencias p {
     margin-left: 0;
     width: 100%;
     border-radius: 15px;
   }
+
   .clientes ul li {
     width: 100%;
     border-radius: 10px;
+    margin-left: 0;
+    margin-right: 0;
   }
 }
