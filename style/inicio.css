@@ -3,74 +3,131 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Jaldi', sans-serif !important;
 }
-
-.container {
-    background-image: url('../img/inicio-banner.png');
-    background-size: cover;
-    background-position: center;
-    width: 600px; /* Utiliza el 100% del ancho del viewport */
-    height: 600px;
-    margin-left: 10px;
-    padding: 0;
-    
-  }
+body {
   
-  
-.overlay {
-    position: relative;
-    top: 50%;
-    left: 50%;
-    margin-left: 850px;
-    margin-top: 100px;
-    transform: translate(-50%, -50%);
-    width: 600px; /* Ancho igual al de content */
-    height: 300px; /* Alto igual al de content */
-    background-color: #DFD6C7;
-    z-index: 1;
-  }
-  
-  .content {
-    position: relative;
-    z-index: 2;
-    color: #e9e9e9; /* Cambia el color del texto a blanco */
-    padding: 30px;
-    background-color: #174F50; /* Cambia el color de fondo */
-    width: 550px;
-    height: 270px;
-    margin-left: 370px;
-    margin-top: 200px;
-  }
-.titulo{
-  margin-bottom: 700px;
+  color: #000202;
+  background-color: #f8f9fa; 
 }
-.content h1 {
-  font-size: 30px;
-  font-weight: bold;
-  
+.container-main .container-b{
+  background-color: #DFD6C7; 
+  margin-top: 30px;
 
 }
+.container-main .container-s{
+  background-color: #174F50;
 
-.content section {
-  color: #C1AD70;
-  font-size: 45px;
 }
-
-.content h3 {
-  font-size: 22px;
-  font-weight: lighter;
-}
-
-.btn-conocenos {
+.contacto #btn-contacto {
   background-color: #C1AD70;
   color: #fff;
-  padding: 10px 20px;
-  border-radius: 5px;
+  padding: 5px 30px;
   text-decoration: none;
+  border-radius: 80px;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: 20px;
   font-family: 'Jaldi', sans-serif;
   font-size: 18px;
   font-weight: bold;
-  position: absolute;
-  bottom: 20px;
-  right: 20px;
+  border: none;
+}
+
+h2{
+  font-weight: bold !important;
+  text-align: center !important;
+  color: #174F50 !important;
+  font-size: 40px !important;
+}
+
+/* Agrega este CSS a tu archivo styles.css */
+.carousel {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card {
+  width: 300px;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.card-info {
+  margin-top: 15px;
+
+}
+.card-info p{
+  color: #174F50;
+}
+.card-btn {
+  color: #174F50;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+
+#img-cont{
+  width: 400px;
+  border-radius: 10px;
+}
+
+#btn-contactanos {
+  background-color: #C1AD70;
+  color: #fff;
+  padding: 5px 30px;
+  text-decoration: none;
+  border-radius: 80px;
+  margin-bottom: 40px;
+  width: 300px;
+  margin-right: 20px;
+  font-size: 18px;
+  border: none;
+}
+
+#btn-contactanos:hover{
+  background-color: #DFD6C7;
+}
+
+
+.gastronomia-inicio img
+{
+  width: 448px !important;
+  height: 494px !important;
+  padding: 20px;
+  margin-bottom: 20px;
+
+}
+.gastronomia-inicio .row-2 img{
+  margin-left: 185px !important;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 25px !important;
+}
+.gastronomia-inicio .img-thumbnail{
+  background-color: #C1AD70;
+  border: none !important;
+  border-radius: 20px !important;
+}
+.gastronomia-inicio .img-thumbnail:hover{
+  background-color: #174F50;
 }

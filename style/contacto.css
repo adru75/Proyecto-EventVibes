@@ -74,8 +74,9 @@ section.formcontacto {
     -moz-transition: all 0.30s ease-in-out;
     -ms-transition: all 0.30s ease-in-out;
     -o-transition: all 0.30s ease-in-out;
+    transition: all 0.30s ease-in-out;
     outline: none;
-    border: 5px solid #DDDDDD;
+    border: 1px solid #DDDDDD;
   }
    
   .formcontacto__input:focus, .formcontacto__textarea:focus {
@@ -135,7 +136,7 @@ padding: 20px;}
     .container {
         margin:0;
         padding: 0;
-        width: 100% !important;
+        width: 100%;
     }
 
     .formcontacto__title {

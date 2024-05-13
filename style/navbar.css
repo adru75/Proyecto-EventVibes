@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Jaldi&family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&display=swap');
 
 * {
+   font-family: 'Jaldi', sans-serif !important;;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -20,20 +21,28 @@
     position: absolute;
     top: 0;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 3;
     
 }
 
 .logo img {
-    width: 142px;
+    width: 104px;
     height: 80px;
 }
 
+
+section{
+    font-family: 'Jaldi', sans-serif;
+    font-weight:lighter;
+    font-size: 26px;
+}
 .menu {
     list-style-type: none;
-    margin-left: 500px;
+    margin-left: 400px;
     padding: 0;
     display: flex;
-    margin-top: 15px;
+    margin-top: auto;
+    margin-bottom: auto;
    
 }
 
@@ -45,7 +54,7 @@
 .menu li a {
     color: #fff;
     text-decoration: none;
-    padding: 10px 15px;
+    padding: 0px 15px;
     font-family: 'Jaldi', sans-serif;
     font-size: 20px;
     font-weight: bold;
@@ -58,8 +67,7 @@
     /* Agrega border-radius al hacer hover */
 }
 
-
-.contacto .btn-contacto {
+.contacto #btn-contacto {
     background-color: #C1AD70;
     color: #fff;
     /* Cambia el color de la letra */
@@ -85,17 +93,17 @@
     }
 
     50% {
-        transform: scale(1.3);
+        transform: scale(1.2);
     }
 
     100% {
         transform: scale(1);
     }
 }
-.contacto .btn-contacto:hover {
+.contacto #btn-contacto:hover {
     background-color: #C9BB8F;
     color: #4C4637;
-    animation: pulse 0.5s infinite alternate;
+    animation: pulse 1s infinite alternate;
     border: none;
 
 }

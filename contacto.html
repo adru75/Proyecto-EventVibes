@@ -4,10 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Galería de Imágenes</title>
+    <title>Formulario de contacto</title>
 
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
+    <link rel="stylesheet" href="./style/reset.css">
     <link rel="stylesheet" href="./style/navbar.css">
     <link rel="stylesheet" href="./style/contacto.css">
     <link rel="stylesheet" href="./style/footer1.css">
@@ -15,21 +17,20 @@
 
 <body>
 
-    <nav class="navbar">
+    <nav class="navbar sticky-top ">
         <div class="logo">
-            <a href="index.html">
-                <img src="./img/logo.png" alt="">
-            </a>
+            <a href="inicio.html">
+                <img src="./img/logo-nombre.png" alt="" style="width: 246px;">
         </div>
         <ul class="menu">
-            <li><a href="index.html">Inicio</a></li>
+            <li><a href="inicio.html">Inicio</a></li>
             <li><a href="nosotros.html">Sobre Nosotros</a></li>
             <li><a href="gastronomia.html">Gastronomía</a></li>
             <li><a href="eventos.html">Eventos</a></li>
             <li><a href="galeria.html">Galería</a></li>
         </ul>
         <div class="contacto">
-         <button href="contacto.html" class="btn-contacto">Contacto</button> 
+            <a class="btn" href="contacto.html" role="button" id="btn-contacto">Contacto</a>
         </div>
     </nav>
     
@@ -64,6 +65,10 @@
                             <label class="campo__etiqueta" for="mensaje">Mensaje</label>
                             <textarea class="formcontacto__textarea" rows="5" cols="40" id="mensaje" name="mensaje" placeholder="Mensaje" minlength="2" required></textarea>
                             <span class="mensaje-error"></span>
+                        </fieldset>
+                        <fieldset class="formulario__campo">
+                            <input type="checkbox" id="suscripcion" name="suscripcion" value="1">
+                            <label for="suscripcion"> Marcar si quiere recibir por correo novedades y promociones.</label>
                         </fieldset>
                         <div class="col text-center">
                             <button type="submit" class="boton_contacto" id="boton_contacto" data-boton-enviar>Enviar mensaje</button>
