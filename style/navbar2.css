@@ -13,48 +13,43 @@
     justify-content: space-between;
     align-items: center;
     padding: 0;
-    height: 90px;
-    /* Altura de 180px */
+    height: auto;
     width: 100%;
     margin-top: 0;
-    /* Margen superior de 0 */
     position: absolute;
     top: 0;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     z-index: 3;
-    
+    font-size: 1.4rem;
+}
+.custom-toggler.navbar-toggler {
+    border-color: rgb(212, 166, 12);
+    color: #174F50;
+    margin-right: 30px;
+
+}
+.custom-toggler .navbar-toggler-icon {
+    background-image: url(
+"data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 128, 0, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+img.logo {
+    max-height: 90px;
 }
 
-.logo img {
-    width: 104px;
-    height: 80px;
-}
-
-
-section{
-    font-family: 'Jaldi', sans-serif;
-    font-weight:lighter;
-    font-size: 26px;
-}
 .menu {
-    list-style-type: none;
-    margin-left: 400px;
-    padding: 0;
-    display: flex;
-    margin-top: auto;
-    margin-bottom: auto;
+ 
    
 }
 
 .menu li {
-    margin-left: auto;
-    /* Mueve los elementos al extremo derecho */
+    background-color: #174F50;
+    padding: 0px 15px;
+    white-space: nowrap;
 }
 
 .menu li a {
     color: #fff;
-    text-decoration: none;
-    padding: 0px 15px;
+    padding: 10px 15px 20px;
     font-family: 'Jaldi', sans-serif;
     font-size: 20px;
     font-weight: bold;
@@ -64,7 +59,6 @@ section{
 .menu li a:hover {
     background-color: #0B2E2E;
     border-radius: 10px;
-    /* Agrega border-radius al hacer hover */
 }
 
 .contacto #btn-contacto {
@@ -108,3 +102,10 @@ section{
 
 }
   
+@media (max-width: 425px) {
+
+  
+    img.logo {
+        max-height: 50px;
+    }
+}    

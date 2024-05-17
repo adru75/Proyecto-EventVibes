@@ -7,34 +7,37 @@
     <title>Formulario de contacto</title>
 
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+
 
     <link rel="stylesheet" href="./style/reset.css">
-    <link rel="stylesheet" href="./style/navbar.css">
     <link rel="stylesheet" href="./style/contacto.css">
+    <link rel="stylesheet" href="./style/navbar2.css"> 
     <link rel="stylesheet" href="./style/footer1.css">
 </head>
 
 <body>
-
-    <nav class="navbar sticky-top ">
-        <div class="logo">
-            <a href="inicio.html">
-                <img src="./img/logo-nombre.png" alt="" style="width: 246px;">
+    <nav class="navbar sticky-top navbar-inverse navbar-expand-lg ">
+        <div class="container-fluid">
+            <div class="navbar-brand">
+                    <a href="inicio.html">
+                        <img class="logo" src="./img/logo-nombre.png" alt="EventVibes" >
+                    </a>    
+            </div>    
+            <button class="custom-toggler navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+            <span class="navbar-toggler-icon"></span>
+            </button>
         </div>
-        <ul class="menu">
-            <li><a href="inicio.html">Inicio</a></li>
-            <li><a href="nosotros.html">Sobre Nosotros</a></li>
-            <li><a href="gastronomia.html">Gastronomía</a></li>
-            <li><a href="eventos.html">Eventos</a></li>
-            <li><a href="galeria.html">Galería</a></li>
-        </ul>
-        <div class="contacto">
-            <a class="btn" href="contacto.html" role="button" id="btn-contacto">Contacto</a>
-        </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="menu navbar-nav me-auto">
+            <li class="nav-item"><a class='nav-link' href="inicio.html">Inicio</a></li>
+            <li class="nav-item"><a class='nav-link' href="nosotros.html">Sobre Nosotros</a></li>
+            <li class="nav-item"><a class='nav-link' href="gastronomia.html">Gastronomía</a></li>
+            <li class="nav-item"><a class='nav-link' href="eventos.html">Eventos</a></li>
+            <li class="nav-item"><a class='nav-link' href="galeria.html">Galería</a></li>
+            </ul>
+        </div>    
     </nav>
-    
-
     <div class="container">
 
         <section class="formcontacto" id="contacto">
@@ -45,20 +48,20 @@
                 </div>
                 <div class="formcontacto__text">
                     <h3 class="formcontacto__subtext">Complete el siguiente formulario y nos comunicaremos con usted lo antes posible. </h3>
-                    <form class="formcontacto__form" name="form" data-formulario>
+                    <form class="formcontacto__form" name="form" autocomplete="on" data-formulario>
                         <fieldset class="formulario__campo">
                             <label class="campo__etiqueta" for="nombre">Nombre</label>
-                            <input class="formcontacto__input" type="text" name="nombre" placeholder="Nombre" minlength="3" required>
+                            <input class="formcontacto__input" type="text" id="nombre" name="nombre" placeholder="Nombre" minlength="3" required>
                             <span class="mensaje-error"></span>
                         </fieldset>
                         <fieldset class="formulario__campo">
                             <label class="campo__etiqueta" for="email">E-mail</label>
-                            <input class="formcontacto__input" type="email" name="email" placeholder="E-mail" minlength="5" required>
+                            <input class="formcontacto__input" type="email" id="email" name="email" placeholder="E-mail" minlength="5" required>
                             <span class="mensaje-error"></span>
                         </fieldset>
                         <fieldset class="formulario__campo">
                             <label class="campo__etiqueta" for="asunto">Asunto</label>
-                            <input class="formcontacto__input" type="text" name="asunto" placeholder="Asunto" minlength="3" required>
+                            <input class="formcontacto__input" type="text" id="asunto" name="asunto" placeholder="Asunto" minlength="3" required>
                             <span class="mensaje-error"></span>
                         </fieldset>
                         <fieldset class="formulario__campo">

@@ -1,7 +1,7 @@
 .container {
    min-height: 90vh;
    background-color: #C1AD70;
-    padding: 1em;
+    padding-top: 1.5em;
     width: 100%;
 }
 
@@ -42,11 +42,11 @@ section.formcontacto {
     display: flex;
     flex-direction: column;
     margin-top: 1em;
-    gap: 1em;
+    gap: 0.5em;
 }
 .formcontacto__input {
     border:none;
-    padding: 1em;
+    padding: 0.5em;
     border-bottom: 2px solid #EAF2FD;
     border-radius: 10px;
     display: block;
@@ -135,7 +135,6 @@ padding: 20px;}
 
     .container {
         margin:0;
-        padding: 0;
         width: 100%;
     }
 
@@ -157,12 +156,12 @@ padding: 20px;}
 
 /*Mobile*/
 @media (max-width: 425px) {
-
     
     .container {
         margin:0;
+        padding-top: 1rem;
     }
-
+ 
     .formcontacto__title {
         font-size: 1.2em;
         margin-top: 3em;
@@ -191,5 +190,6 @@ padding: 20px;}
     }
     .formcontacto__input {
         margin-top: 0em;
+        padding: 0.2em 0.7em 0.2em;
     }
 }
