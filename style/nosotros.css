@@ -3,13 +3,13 @@
   width: 1500px;
   height: 650px;
   background-color: #174f50;
-  margin-left: 10%;
-  margin-right: 15%;
+  margin: auto;
   word-wrap: break-word;
   border-radius: 10px;
-  margin-top: 7em;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  margin-top: 40px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
   overflow: hidden;
+  
 }
 
 #nosotros h2,
@@ -18,6 +18,7 @@
 #experiencias p {
   text-align: center;
   color: #fbe4be;
+  
 }
 
 #nosotros h2 {
@@ -25,6 +26,7 @@
   font-style: italic;
   font-weight: bolder;
   margin-left: 55%;
+  font-weight:700;
 }
 
 #nosotros p {
@@ -47,11 +49,10 @@
 #experiencias {
   width: 80%;
   height: 40%;
-  margin-left: 15%;
-  margin-right: 15%;
+  margin: auto;
   word-wrap: break-word;
   border-radius: 10px;
-  margin-top: 7em;
+  margin-top: 30px;
   color: #fbe4be;
 }
 
@@ -68,10 +69,11 @@
   height: fit-content;
   font-size: 2.7rem;
   font-style: italic;
-  font-weight: bolder;
+  font-weight:700;
   background-color: #174f50;
-  margin-left: 25%;
+  margin: auto;
   border-radius: 0.5cm;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
 }
 
 .imgexp {
@@ -87,12 +89,15 @@
 }
 
 .clientes ul {
+  display: flex;
+  margin: auto;
   flex-direction: column;
   list-style: none;
   margin-bottom: 5%;
-  margin-top: 5%;
   padding: 1em;
   text-align: center;
+  align-items: center;
+  
 }
 
 .clientes ul li {
@@ -103,11 +108,10 @@
   height: 275px;
   border-radius: 2%;
   border-style: ridge;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
 }
 
 .clientes ul li:nth-child(2) {
-  margin-left: 35%;
   height: fit-content;
   .imgexp{
     margin-top: 8%;
@@ -115,7 +119,6 @@
 }
 
 .clientes ul li:nth-child(4) {
-  margin-left: 35%;
   height: fit-content;
   .imgexp {
     margin-top: 15%;
@@ -157,4 +160,30 @@
     margin-left: 0;
     margin-right: 0;
   }
+}
+
+#map{
+ width: fit-content;
+ height: fit-content;
+ margin: auto;
+ margin-top: 75px;
+ margin-bottom: 50px;
+ align-content: center;
+ text-align: center;
+ 
+}
+
+#mapframe{
+  margin-top: 10px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+#map h2{
+  font-size: 2.7rem;
+  font-style: italic;
+  font-weight:700;
+  border-radius: 0.5cm;
+  background-color:#174f50;
+  color: #fbe4be;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
 }
