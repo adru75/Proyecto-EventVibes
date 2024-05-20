@@ -3,7 +3,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Jaldi', sans-serif !important;
 }
 body {
   color: #000202;
@@ -13,9 +12,11 @@ body {
   background-color: #DFD6C7; 
   margin-top: 30px;
 
+
 }
 .container-main .container-s{
   background-color: #174F50;
+  font-family: 'Jaldi', sans-serif;
 
 }
 .contacto #btn-contacto {
@@ -40,14 +41,14 @@ h2{
   font-size: 40px !important;
 }
 
-/* Agrega este CSS a tu archivo styles.css */
+
 .carousel {
   padding: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 300px;
-  overflow: hidden;
+  overflow:scroll;
   position: relative;
 }
 
@@ -70,6 +71,9 @@ h2{
   border-radius: 8px;
 }
 
+img.inicio-banner {
+  max-width:800px;
+}
 .card-info {
   margin-top: 15px;
 
@@ -103,25 +107,33 @@ h2{
   border: none;
 }
 
+#btn-contacto:hover{
+  background-color: #DFD6C7;
+}
+
 #btn-contactanos:hover{
   background-color: #DFD6C7;
 }
 
-
 .gastronomia-inicio img
 {
+  /*
   width: 448px !important;
   height: 494px !important;
-  padding: 20px;
+  padding: 10px;
+  */
   margin-bottom: 20px;
-
+  justify-content: space-around;
+  align-content: center;
 }
+/*
 .gastronomia-inicio .row-2 img{
   margin-left: 185px !important;
   padding: 20px;
   margin-top: 20px;
   border-radius: 25px !important;
 }
+*/
 .gastronomia-inicio .img-thumbnail{
   background-color: #C1AD70;
   border: none !important;
@@ -129,4 +141,12 @@ h2{
 }
 .gastronomia-inicio .img-thumbnail:hover{
   background-color: #174F50;
+}
+
+
+@media (max-width: 768px) {
+  img.inicio-banner {
+    max-width:300px;
+  }
+
 }

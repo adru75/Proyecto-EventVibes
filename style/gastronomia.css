@@ -9,6 +9,8 @@ h1{
     justify-content: center;
     text-align: center;
     margin-top: 100px;
+    font-size: 2.5rem;
+    color: #0B2E2E;
 }
 
 .card-container{
@@ -20,7 +22,7 @@ h1{
 
 .card{
     width: 325px;
-    background-color: #eee5d6;;
+    background-color: #fff7e8;;
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
@@ -39,6 +41,7 @@ h1{
 .card-content h3{
     font-size: 28px;
     margin-bottom: 8px;
+    color: #0B2E2E;
 }
 
 .card-content p{
@@ -56,8 +59,8 @@ h1{
     border-radius: 5px;
     color: #f2f2f2;
 
-    margin-top: auto; /* Alineamos el botón al final del contenedor */
-    margin-bottom: 16px; /* Agregamos un margen inferior */
+    margin-top: 16px; 
+    margin-bottom: 16px; 
     margin-left: auto; /* Alineamos el botón al final del contenedor */
     margin-right: auto; /* Alineamos el botón al final del contenedor */
 }
@@ -80,4 +83,29 @@ h1{
 
 .btn:hover{
     animation: pulse 0.5s infinite alternate;
+}
+
+
+/* Media queries */
+/*Pantallas pequeñas como celulares*/
+@media only screen and (max-width: 768px) {
+    .card {
+        width: 90%; 
+        margin: 20px auto; 
+    }
+}
+
+/*Pantallas medianas como tablets*/
+@media only screen and (max-width: 992px) {
+    h1 {
+        font-size: 2rem; 
+    }
+}
+
+/*Extra large devices*/
+@media only screen and (max-width: 1200px) {
+    .card {
+        width: 50%; 
+        margin: 20px; 
+    }
 }

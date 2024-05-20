@@ -8,14 +8,17 @@
 .navbar {
     position: sticky;
     top: 0;
-    z-index: 1000; /* Asegura que la navbar esté por encima de las imágenes */
+    z-index: 1000; 
     background-color: #174F50;
 }
 
 
 h1 {
     color: #0B2E2E;
-    margin-left: 20px; /* Agrega un margen izquierdo de 20px al título */
+    justify-content: center;
+    text-align: center;
+    margin-top: 100px;
+    font-size: 2.5rem;
 }
 
 
@@ -51,7 +54,7 @@ h1 {
     flex-direction: column;
     justify-content: center;
     padding: 0 20px;
-    background-color:  #eee5d6;;
+    background-color:  #eee5d6;
 }
 
 .evento:nth-child(odd) .evento img {
@@ -74,7 +77,7 @@ h1 {
     /*font-size: 24px;*/
     margin-bottom: 10px;
     color: #0B2E2E;
-    font-size: 2.5rem;;
+    font-size: 2.5rem;
 }
 
 .evento-descripcion {

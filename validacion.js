@@ -132,7 +132,7 @@ const tiposError = [
       document.getElementById("boton_contacto").disabled = false;
   
       botonEnviar.style.border = "1px solid #FFF";
-      botonEnviar.style.backgroundColor = "#2A7AE4";
+      botonEnviar.style.backgroundColor = "#174F50";
       botonEnviar.style.cursor = "pointer";
       botonEnviar.style.color = "#FFF";
   
@@ -151,4 +151,5 @@ const tiposError = [
   
   }
   
-  
+
+ 

@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Jaldi&family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+header{
+    font-family: 'Jaldi', sans-serif ;
+    height: 100px;
+    background-color: #174F50;
+    padding: 0 30px; 
+    color: #f2f2f2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    display: flex;
+    align-items: center; 
+}
+
+.logo h2{
+    font-size: 20px;
+}
+
+header .logo .logo-img img{
+    height: 60px;
+    width: auto;
+    margin-right: 5px;
+   
+}
+.logo-img{
+    margin-right: 5px ;
+
+}
+
+.logo-img:hover{
+    transform: scale(1.1);
+}
+
+
+
+.menu a{
+    color: #f2f2f2;
+    text-decoration: none;
+    padding: 0 10px;
+    transition: 0.4s; 
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.menu a:hover{
+    transform: scale(1.1);
+}
+
+
+.mostrar-menu,
+.esconder-menu{
+    font-size: 30px;
+    cursor: pointer;
+    display: none; 
+    transition: 0.4s;
+}
+
+
+.mostrar-menu{
+    order: 1;
+}
+
+.menu a:hover{
+   /*  background-color: #0B2E2E;
+    border-radius: 10px; */
+    transform: scale(1.1);
+}
+
+.menu a:hover,
+.mostrar-menu:hover,
+.esconder-menu:hover{
+    transform: scale(1.1);
+    background-color: #0B2E2E;
+    border-radius: 10px;
+}
+
+
+
+#check{
+    display: none;
+    color: #DFD6C7;
+}
+
+
+.btn-contacto{
+    background-color: #C1AD70;
+    color: #fff;
+    border: none;
+    border-radius: 80px;
+    padding: 4px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    transform: scale(1.1);
+}
+
+
+.btn-contacto:hover {
+    background-color: #C9BB8F;
+    color: #4C4637;
+}
+
+
+@keyframes pulse{
+    0%{
+        transform: scale(1);
+    }50%{
+        transform: scale(1.1);
+    }100%{
+        transform: scale(1);
+    }
+}
+
+.btn-contacto:hover{
+    animation: pulse 0.5s infinite alternate;
+}
+
+
+/*RESPONSIVE*/
+@media(max-width:768px){
+    /*HEADER*/
+    .mostrar-menu,
+    .esconder-menu{
+        display: block;
+    }
+
+    .logo .logo-img{
+        margin-left: 5px;
+    }
+    .menu{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: #174F50;
+        right: -100%;
+        top: 0;
+        text-align: center;
+        padding: 100px 0px;
+        z-index: 100;
+        transition: 0.8s;
+    }
+
+    .menu a{
+        display: block;
+        padding: 20px;
+    }
+
+    .esconder-menu{
+        position: absolute;
+        top: 40px;
+        right: 40px;
+    }
+
+    #check:checked ~.menu{
+        right: 0;
+    }
+
+    .menu a:hover,
+    .mostrar-menu:hover,
+    .esconder-menu:hover{
+    transform: scale(1.1);
+    background-color: #174F50;
+    border-radius: 10px;
+}
+
+
+    .btn-contacto{
+        background-color: #174F50;
+        border-radius: 80px;
+    }
+
+    .btn-contacto:hover {
+        background-color: #174F50;
+        color: #fff;
+        transform: scale(1.1);
+    }
+    
+}
+

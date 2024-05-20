@@ -5,31 +5,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="./style/navbar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"> 
+    <link rel="stylesheet" href="./style/navbarResponsive.css">
     <link rel="stylesheet" href="./style/galeria.css">
-    <link rel="stylesheet" href="./style/footer1.css">
+    <link rel="stylesheet" href="./style/footer.css">
     <link rel="stylesheet" href="./style/nosotros.css">
 
     <title>Sobre nosotros</title>
 </head>
 
 <body>
-    <nav class="navbar sticky-top ">
+    <header>
         <div class="logo">
-            <a href="inicio.html">
-                <img src="./img/logo-nombre.png" alt="" style="width: 246px;">
-        </div>
-        <ul class="menu">
-            <li><a href="inicio.html">Inicio</a></li>
-            <li><a href="gastronomia.html">Gastronomía</a></li>
-            <li><a href="eventos.html">Eventos</a></li>
-            <li><a href="galeria.html">Galería</a></li>
-        </ul>
-        <div class="contacto">
-            <a class="btn" href="contacto.html" role="button" id="btn-contacto">Contacto</a>
-        </div>
-    </nav>
-
+            <a href="#" class= "logo-img">
+                <img src="./img/logo-nombre.png" alt="">
+             </a>
+         </div>
+        
+         <input type="checkbox" id="check"> 
+        <label for="check" class="mostrar-menu">
+            &#8801
+        </label>
+        <nav class="menu">
+            <a href="./index.html">Inicio</a>
+            <a href="./gastronomia.html">Gastronomía</a>
+            <a href="./eventos.html">Eventos</a>
+            <a href="./galeria.html">Galería</a>
+            <button class="btn-contacto" id="contacto-btn">Contacto</button>
+            <label for="check" class="esconder-menu">&#215</label>
+        </nav>
+    </header>
     <!---->
     <script type="text/javascript" src="nav.js"></script>
 

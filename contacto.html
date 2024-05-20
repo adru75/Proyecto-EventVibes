@@ -5,46 +5,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario de contacto</title>
-
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
-
 
     <link rel="stylesheet" href="./style/reset.css">
     <link rel="stylesheet" href="./style/contacto.css">
-    <link rel="stylesheet" href="./style/navbar2.css"> 
-    <link rel="stylesheet" href="./style/footer1.css">
+    <link rel="stylesheet" href="./style/footer.css">
+    <link rel="stylesheet" href="./style/navbarResponsive.css"> 
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"> 
+
 </head>
 
 <body>
-    <nav class="navbar sticky-top navbar-inverse navbar-expand-lg ">
-        <div class="container-fluid">
-            <div class="navbar-brand">
-                    <a href="inicio.html">
-                        <img class="logo" src="./img/logo-nombre.png" alt="EventVibes" >
-                    </a>    
-            </div>    
-            <button class="custom-toggler navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
-            <span class="navbar-toggler-icon"></span>
-            </button>
-        </div>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="menu navbar-nav me-auto">
-            <li class="nav-item"><a class='nav-link' href="inicio.html">Inicio</a></li>
-            <li class="nav-item"><a class='nav-link' href="nosotros.html">Sobre Nosotros</a></li>
-            <li class="nav-item"><a class='nav-link' href="gastronomia.html">Gastronomía</a></li>
-            <li class="nav-item"><a class='nav-link' href="eventos.html">Eventos</a></li>
-            <li class="nav-item"><a class='nav-link' href="galeria.html">Galería</a></li>
-            </ul>
-        </div>    
-    </nav>
+    <header>
+        <div class="logo">
+            <a href="#" class= "logo-img">
+                <img src="./img/logo-nombre.png" alt="">
+             </a>
+         </div>
+        
+         <input type="checkbox" id="check"> 
+        <label for="check" class="mostrar-menu">
+            &#8801
+        </label>
+        <nav class="menu">
+            <a href="./index.html">Inicio</a>
+            <a href="./nosotros.html">Sobre Nosotros</a>
+            <a href="./gastronomia.html">Gastronomía</a>
+            <a href="./eventos.html">Eventos</a>
+            <a href="./galeria.html">Galería</a>
+            <button class="btn-contacto" id="contacto-btn">Contacto</button> 
+            <label for="check" class="esconder-menu">&#215</label>
+        </nav>
+    </header>
     <div class="container">
 
         <section class="formcontacto" id="contacto">
             <h3 class="formcontacto__title">Contacto</h3>
             <div  class="formcontacto__contacto">
                 <div class="formcontacto-izquierda">
-                    <img class="formcontacto__img" src=""> 
+                    <img class="formcontacto__img" src="./img/contact-us.png"> 
                 </div>
                 <div class="formcontacto__text">
                     <h3 class="formcontacto__subtext">Complete el siguiente formulario y nos comunicaremos con usted lo antes posible. </h3>
@@ -87,16 +88,6 @@
 
     <section class="footer">
         <div class="box-container">
-      <!--     <div class="box">
-            <h3 class="h3">Enlces rápidos</h3>
-            <a href="./index.html">Inicio</a>
-            <a href="./nosotros.html">Sobre nosotros</a>
-            <a href="#">Gatronomía</a>
-            <a href="./eventos.html">Eventos</a>
-            <a href="./galeria.html">Galería</a>
-            <a href="./contacto.html">Contacto</a>
-          </div>
-     -->
           <div class="box">
             <h3>Preguntas frecuentes</h3>
             <a href="#"> <i class="fa-solid fa-angle-right" style="color: #eee5d6;"></i>Horarios</a>

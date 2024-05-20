@@ -1,8 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Jaldi&family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&display=swap');
+
 .container {
-   min-height: 90vh;
-   background-color: #C1AD70;
+    font-family: 'Jaldi', sans-serif ;
+    min-height: 90vh;
+    background-color: #DFD6C7;
     padding-top: 1.5em;
     width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
 }
 
 /*Contacto*/
@@ -23,6 +29,7 @@ section.formcontacto {
 .formcontacto__img {
     width: 100%;
     border-radius: 40px;
+    max-width: 300px;
 }
 .formcontacto__text {
     display: flex;
@@ -30,8 +37,14 @@ section.formcontacto {
     padding: 2em;
 }
 .formcontacto__title {
-    font-size: 1.5em;
+   /*  font-size: 1.5em; */
     margin-bottom: 1em;
+    justify-content: center;
+    text-align: center;
+    font-size: 2.5rem;
+    color: #0B2E2E;
+
+    
 }
 .formcontato__subtext {
     font-size: 1em;
@@ -55,7 +68,7 @@ section.formcontacto {
 }
 .formcontacto__input:hover {
     border:none;
-    border-bottom: 2px solid #2A7AE4;    
+    border-bottom: 2px solid #C1AD70;    
 
 }
 .formcontacto__textarea {
@@ -92,11 +105,11 @@ section.formcontacto {
 }
 .formcontacto__textarea:hover {
     border:none;
-    border-bottom: 2px solid #2A7AE4;    
+    border-bottom: 2px solid #C1AD70;    
 }
 .formcontacto__boton {
     cursor: pointer;
-    background-color: #2A7AE4;
+    background-color: #174F50;
     border: 1px solid #FFF;
     color: #FFF;  
 
@@ -125,7 +138,11 @@ section.formcontacto {
     padding: 1rem;
     font-size: 1.2rem;
     max-width: 300px;
-}
+    background-color: #174F50;
+    color: #FFF;
+}  
+
+
 
 .footer {
 padding: 20px;}
@@ -136,6 +153,10 @@ padding: 20px;}
     .container {
         margin:0;
         width: 100%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 10px;
+        margin-left: 10px;
     }
 
     .formcontacto__title {
@@ -160,6 +181,10 @@ padding: 20px;}
     .container {
         margin:0;
         padding-top: 1rem;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 10px;
+        margin-left: 10px;
     }
  
     .formcontacto__title {

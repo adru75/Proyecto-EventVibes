@@ -1,6 +1,7 @@
 #nosotros {
   display: flex;
-  width: 1500px;
+  width: 90%;
+  max-width: 1500px;
   height: 650px;
   background-color: #174f50;
   margin: auto;

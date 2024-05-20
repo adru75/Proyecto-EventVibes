@@ -1,38 +1,45 @@
-@import url('https://fonts.googleapis.com/css2?family=Jaldi&family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&display=swap');
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
 }
-footer {
-    margin-top: 30px;
-    background-color: #DFD6C7;
-    color: #174F50;
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-family: 'Jaldi', sans-serif;
-    font-size: 20px;
-    font-weight: bold;
-    flex-wrap: wrap;
+
+
+.footer{
+    background-color: #174F50;;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
   }
 
-  footer a {
+  .footer .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem,1fr));
+    gap: 3rem;
+  }
+
+  .footer .box-container .box h3{
+    color: #f2f2f2;
+    font-size: 1.5rem;
+    padding-bottom: 2rem;
+    margin-top: 20px;
+  }
+
+  .footer .box-container .box a{
+    color: #f2f2f2;
+    font-size: 1rem;
+    padding-bottom: 1rem;
+    display: block;
     text-decoration: none;
-    color: #174F50;
-    margin-right: 20px;
-    margin-bottom: 10px;
   }
 
-  
-  @media screen and (max-width: 768px) {
-    footer {
-      flex-direction: column; 
-      align-items: flex-start; 
-    }
-
-    footer a {
-      margin-right: 0; }
+  .footer .box-container .box a i{
+    color: #f2f2f2;
+    padding-right: .5rem;
+    transition: .2s linear;
   }
+
+  .footer .box-container .box a:hover i{
+    padding-right: 2rem;
+  }
+
