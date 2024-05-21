@@ -143,6 +143,10 @@ img.inicio-banner {
   background-color: #174F50;
 }
 
+.titulo-in{
+  font-family: 'Jaldi', sans-serif;
+}
+
 
 @media (max-width: 768px) {
   img.inicio-banner {
