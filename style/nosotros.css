@@ -136,6 +136,32 @@
   color: #fbe4be;
 }
 
+#map{
+ width: fit-content;
+ height: fit-content;
+ margin: auto;
+ margin-top: 75px;
+ margin-bottom: 50px;
+ align-content: center;
+ text-align: center;
+ 
+}
+
+#mapframe{
+  margin-top: 10px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+#map h2{
+  font-size: 2.7rem;
+  font-style: italic;
+  font-weight:700;
+  border-radius: 0.5cm;
+  background-color:#174f50;
+  color: #fbe4be;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
+
 @media only screen and (max-width: 768px) {
   #nosotros,
   #experiencias {
@@ -165,6 +191,10 @@
     border-radius: 15px;
   }
 
+  #experiencias{
+    margin-bottom: 10%;
+  }
+
   .clientes ul li {
     width: 100%;
     border-radius: 10px;
@@ -175,30 +205,13 @@
    .icons{
     font-size: 10px;
   }
-}
 
-#map{
- width: fit-content;
- height: fit-content;
- margin: auto;
- margin-top: 75px;
- margin-bottom: 50px;
- align-content: center;
- text-align: center;
- 
-}
-
-#mapframe{
-  margin-top: 10px;
-  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
-}
-
-#map h2{
-  font-size: 2.7rem;
-  font-style: italic;
-  font-weight:700;
-  border-radius: 0.5cm;
-  background-color:#174f50;
-  color: #fbe4be;
-  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+  #experiencias h2{
+    border-radius: 0;
+  }
+  
+  #mapframe{
+    width: 90vw;
+    height: 400px;
+  }
 }
