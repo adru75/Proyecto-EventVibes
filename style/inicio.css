@@ -337,6 +337,19 @@
 /* Media Queries */
 @media screen and (max-width: 768px) {
    
+.titulo {
+  padding: 6rem 0;
+}
+
+.titulo h1 {
+  font-size: 40px;
+  padding: 4rem 0;
+}
+
+.titulo a {
+  font-size: 20px;
+  padding: 6px 15px;
+}
     .contenido-banner {
         font-size: 24px;
     }
@@ -363,6 +376,19 @@
 }
 
 @media screen and (max-width: 480px) {
+    .titulo {
+    padding: 4rem 0;
+  }
+
+  .titulo h1 {
+    font-size: 30px;
+    padding: 3rem 0;
+  }
+
+  .titulo a {
+    font-size: 18px;
+    padding: 5px 10px;
+  }
     .contenido-banner {
         font-size: 20px;
     }
