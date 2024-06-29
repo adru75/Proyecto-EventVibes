@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Jaldi&family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Jaldi', sans-serif; 
+}
+
+h1{
+    justify-content: center;
+    text-align: center;
+    margin-top: 100px;
+    font-size: 2.5rem;
+    color: #0B2E2E;
+}
+
+.card-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 100px;
+}
+
+.card{
+    width: 325px;
+    background-color: #fff7e8;;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
+    margin: 20px;
+}
+
+.card img{
+    width: 100%;
+    height: 210px;
+}
+
+.card-content{
+    padding: 16px;
+}
+
+.card-content h3{
+    font-size: 28px;
+    margin-bottom: 8px;
+    color: #0B2E2E;
+}
+
+.card-content p{
+    color: #666;
+    font-size: 20px;
+    line-height: 1.3;
+}
+
+.card-content .btn{
+    display: inline-block;
+    padding: 8px 16px;
+    margin: 0 auto 16px; 
+    background-color: #C1AD70;
+    text-decoration: none;
+    border-radius: 5px;
+    color: #f2f2f2;
+
+    margin-top: 16px; 
+    margin-bottom: 16px; 
+    margin-left: auto; /* Alineamos el botón al final del contenedor */
+    margin-right: auto; /* Alineamos el botón al final del contenedor */
+}
+
+
+.btn:hover{
+    background-color: #C9BB8F;
+    color: #4C4637;
+}
+
+@keyframes pulse{
+    0%{
+        transform: scale(1);
+    }50%{
+        transform: scale(1.1);
+    }100%{
+        transform: scale(1);
+    }
+}
+
+.btn:hover{
+    animation: pulse 0.5s infinite alternate;
+}
+
+
+.buscar{
+    margin: 0 auto;
+    padding: 5px;
+    align-items: center;
+    text-align: center; 
+    display: flex; 
+    max-width: 300px;
+    
+}
+
+
+.buscar input{
+    flex: 1; /* Ocupa todo el espacio disponible */
+    width: auto; /* Ajusta el ancho automáticamente */
+    height: 40px;
+    padding: 0 20px;
+    font-size: 18px;
+    color: #000;
+    outline: none;
+    border: 1px solid silver;
+    border-radius: 30px;
+    
+}
+
+
+.button{
+  /*   top: 0;
+    right: 0; */
+    background:#174F50;
+    width: 50px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #f2f2f2;
+    font-size: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: none;
+}
+
+/* Media queries */
+/*Pantallas pequeñas como celulares*/
+@media only screen and (max-width: 768px) {
+    .card {
+        width: 90%; 
+        margin: 20px auto; 
+    }
+}
+
+/*Pantallas medianas como tablets*/
+@media only screen and (max-width: 992px) {
+    h1 {
+        font-size: 2rem; 
+    }
+}
+
+/*Extra large devices*/
+@media only screen and (max-width: 1200px) {
+    .card {
+        width: 50%; 
+        margin: 20px; 
+    }
+}
