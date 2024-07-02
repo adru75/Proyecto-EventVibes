@@ -15,7 +15,7 @@ const db = require("../db/db.js");
 //2- getAllMenus
 const getAllMenus = (req, res)=>{
     //Consulta para traer todos los menus
-    const sql = "SELECT * FROM menus";
+    const sql = "SELECT menus.id,menus.nombre, menus.descripcion, menus.precio, menus.imagen, platos.nombre AS platoPrincipal,bebidas.nombre AS bebida FROM menus_db.menus INNER JOIN bebidas ON menus.bebida = bebidas.id JOIN platos ON menus.platoPrincipal = platos.id;";
 
     //Enviar la consulta a la base de datos
     db.query(sql, (error, results)=>{

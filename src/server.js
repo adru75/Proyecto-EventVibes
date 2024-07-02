@@ -4,6 +4,9 @@
 //1- Importacion de express
 const express = require("express");
 
+const cors = require('cors');
+
+
 //2- Instanciar express
 const app = express();
 
@@ -15,6 +18,8 @@ const PORT = 3000;
 
 //5- Transformacion del body a formato legible 
 app.use(express.json());
+
+app.use(cors());
 
 //6- Prefijo principal de las rutas
 app.use("/menus", menusRoutes);
