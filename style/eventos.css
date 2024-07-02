@@ -22,6 +22,45 @@ h1 {
     font-size: 2.5rem;
 }
 
+.buscar{
+    margin: 0 auto;
+    padding: 5px;
+    align-items: center;
+    text-align: center; 
+    display: flex; 
+    max-width: 300px;
+    
+}
+
+
+.buscar input{
+    flex: 1; /* Ocupa todo el espacio disponible */
+    width: auto; /* Ajusta el ancho automáticamente */
+    height: 40px;
+    padding: 0 20px;
+    font-size: 18px;
+    color: #000;
+    outline: none;
+    border: 1px solid silver;
+    border-radius: 30px;
+    
+}
+
+
+.button{
+  /*   top: 0;
+    right: 0; */
+    background:#174F50;
+    width: 50px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #f2f2f2;
+    font-size: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: none;
+}
 
 
 .eventos-container {
@@ -84,6 +123,29 @@ h1 {
 .evento-descripcion {
     font-size:  1.5rem;
 }
+
+
+.btn{
+    /* display: inline-block; */
+    padding: 8px 16px;
+    margin: 0 auto 16px; 
+    background-color: #174F50;
+    text-decoration: none;
+    border-radius: 5px;
+    color: #f2f2f2;
+
+    margin-top: 16px; 
+    margin-bottom: 16px; 
+    /* margin-left: auto;  *//* Alineamos el botón al final del contenedor */
+    /* margin-right: auto; */ /* Alineamos el botón al final del contenedor */
+}
+
+
+.btn:hover{
+    background-color:#b1a48d;
+    color: #174F50;
+}
+
 
 @media screen and (max-width: 768px) {
     h1 {
