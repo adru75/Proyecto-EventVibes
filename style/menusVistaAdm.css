@@ -6,6 +6,12 @@
     font-family: 'Jaldi', sans-serif; 
 }
 
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
 h1{
     justify-content: center;
     text-align: center;

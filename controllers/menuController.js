@@ -49,13 +49,13 @@ const getMenuById = (req,res)=>{
 //4- createMenu
 const createMenu = (req, res)=>{
     //Desestructuramos la reques
-    const {nombre, platoPrincipal, bebida, precio} = req.body;
+    const {nombre, descripcion, imagen, platoPrincipal, bebida, precio} = req.body;
 
     // crear la consulta
-    const sql = 'INSERT INTO menus (nombre, platoPrincipal, bebida, precio) VALUES (?, ?, ?, ?)';
+    const sql = 'INSERT INTO menus (nombre, descripcion, imagen, platoPrincipal, bebida, precio) VALUES (?, ?, ?, ?, ?, ?)';
 
     // Pasar consulta
-    db.query(sql, [nombre, platoPrincipal, bebida, precio], (error, result)=>{
+    db.query(sql, [nombre, descripcion, imagen, platoPrincipal, bebida, precio], (error, result)=>{
          //Si sucede un error
          if(error){throw error};
          //Si todo sale bien

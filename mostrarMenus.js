@@ -2,6 +2,10 @@ import { conexionAPI } from "./conexionAPI.js";
 
 const lista = document.querySelector("[data-lista]");
 
+const listaPlatos = document.querySelector("[data-lista-platos]");
+
+const listaBebidas = document.querySelector("[data-lista-bebidas]");
+
 function crearCard(nombre,descripcion,platoPrincipal,bebida,precio,imagen) {
     const menu = document.createElement("li");
     menu.className="menu_item";
@@ -20,10 +24,50 @@ function crearCard(nombre,descripcion,platoPrincipal,bebida,precio,imagen) {
         return menu;
 }
 
+function crearCardPlato(id,nombre,descripcion) {
+    const menu = document.createElement("li");
+    menu.className="menu_item";
+    menu.innerHTML=`
+        <div class="card">
+            <div class="card-content">
+                <h4>ID:${id} ${nombre}</h3>
+                <p>${descripcion}<br>
+            </div>
+        </div>
+        `;
+        return menu;
+}
+
+function crearCardBebida(id,nombre,descripcion) {
+    const menu = document.createElement("li");
+    menu.className="menu_item";
+    menu.innerHTML=`
+        <div class="card">
+            <div class="card-content">
+                <h4>ID:${id} ${nombre}</h3>
+                <p>${descripcion}<br>
+            </div>
+        </div>
+        `;
+        return menu;
+}
 
 async function listarMenus() {
     const listaAPI = await conexionAPI.listarMenus();
     listaAPI.forEach(menu=>lista.appendChild(crearCard(menu.nombre,menu.descripcion,menu.platoPrincipal,menu.bebida,menu.precio,menu.imagen)))
 }
 
+async function listarPlatos() {
+    const listaAPI = await conexionAPI.listarPlatos();
+    listaAPI.forEach(menu=>listaPlatos.appendChild(crearCardPlato(menu.id,menu.nombre,menu.descripcion)))
+}
+
+async function listarBebidas() {
+    const listaAPI = await conexionAPI.listarBebidas();
+    listaAPI.forEach(menu=>listaBebidas.appendChild(crearCardPlato(menu.id,menu.nombre,menu.descripcion)))
+}
+
+
 listarMenus();
+listarPlatos();
+listarBebidas();
