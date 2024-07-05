@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./style/menusVistaAdm.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"> 
     <link rel="stylesheet" href="./style/navbarResponsive.css">
@@ -25,34 +26,30 @@
         </label>
         <nav class="menu">
             <a href="./index.html">Inicio</a>
-            <a href="#">Agregar</a>
-            <a href="#">Consultar</a>
+            <a href="./AdminAgregar.html">Agregar</a>
+            <a href="./menusVistaAdmi.html">Consultar</a>
             <a href="#">Actualizar</a>
             <a href="#">Eliminar</a>
            <!--  <button class="btn-contacto" id="contacto-btn">Contacto</button> -->
             <label for="check" class="esconder-menu">&#215</label>
         </nav>
     </header>
-    <h1 class="text-start mt-5 mb-5">Menú para Bodas o Aniversarios</h1>
+    <h1 class="text-start mt-5 mb-5">Aministracion Menú para Bodas o Aniversarios</h1>
     <br>
-    <div class="buscar">
-        <input type="text" placeholder="Buscar" required>
-        <div class="button">
-            <i class="fa-solid fa-magnifying-glass icon"></i>
-        </div>
-    </div>
 
-    <h1 class="text-start">Platos</h1>
+    <h2>Platos</h2>
     <ul class="card-container" alt="menu" data-lista-platos>
         <!-- aca se listan los platos desde mysql -->
     </ul>
 
-    <h1 class="text-start">Bebidas</h1>
+    <h2>Bebidas</h2>
     <ul class="card-container" alt="menu" data-lista-bebidas>
         <!-- aca se listan las bebidas desde mysql -->
     </ul>
 
-    <h1 class="text-start">Menus</h1>
+
+
+    <h2>Menus</h2>
     <ul class="card-container" alt="menu" data-lista>
     <!-- aca se generan las cartas desde mysql -->
     </ul>
@@ -145,6 +142,7 @@
         </div>
       </section>
       <script src="./script.js"></script>
+
       <script src="./mostrarMenus.js" type="module"></script>
 
 </body>

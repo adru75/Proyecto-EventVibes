@@ -38,10 +38,58 @@ async function listarBebidas() {
 }
 
 
+async function enviarBebida(nombre,descripcion) {
+    const conexion = await fetch("http://localhost:3000/menus/createBebida",{
+        method:"POST",
+        headers: {"Content-Type":"application/json"},
+        body: JSON.stringify({
+            nombre:nombre,
+            descripcion:descripcion
+        })
+    })
+    const conexionConvertida = conexion.json();
+    return conexionConvertida;
+}
+
+async function enviarPlato(nombre,descripcion) {
+    const conexion = await fetch("http://localhost:3000/menus/createPlato",{
+        method:"POST",
+        headers: {"Content-Type":"application/json"},
+        body: JSON.stringify({
+            nombre:nombre,
+            descripcion:descripcion
+        })
+    })
+    const conexionConvertida = conexion.json();
+    return conexionConvertida;
+}
+
+async function enviarMenu(nombre,descripcion,platoPrincipal,bebida,precio,imagen) {
+    const conexion = await fetch("http://localhost:3000/menus/create",{
+        method:"POST",
+        headers: {"Content-Type":"application/json"},
+        body: JSON.stringify({
+            nombre:nombre,
+            descripcion:descripcion,
+            platoPrincipal:platoPrincipal,
+            bebida:bebida,
+            precio:precio,
+            imagen:imagen
+        })
+    })
+    const conexionConvertida = conexion.json();
+    return conexionConvertida;
+}
+
+
+
 export const conexionAPI= {
     listarMenus,
     listarPlatos,
-    listarBebidas
+    listarBebidas,
+    enviarBebida,
+    enviarPlato,
+    enviarMenu
 }
 
 //listarMenus();

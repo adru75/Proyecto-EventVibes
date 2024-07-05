@@ -30,8 +30,17 @@ function crearCardPlato(id,nombre,descripcion) {
     menu.innerHTML=`
         <div class="card">
             <div class="card-content">
-                <h4>ID:${id} ${nombre}</h3>
-                <p>${descripcion}<br>
+                <h4>ID:${id}</h4>
+                <h5>Nombre: ${nombre}</h5>
+                <p>Descripcion: ${descripcion}<br>
+            </div>
+            <div class="row justify-content-around">
+                <div class="col-4">
+                    <a href=''><i class="fa-regular fa-pen-to-square"></i></a>
+                </div>
+                <div class="col-4">
+                    <a href=''><i class="fa-solid fa-circle-xmark" style="color: red;"></i></a>
+                </div>    
             </div>
         </div>
         `;
