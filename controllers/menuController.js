@@ -68,13 +68,13 @@ const createMenu = (req, res)=>{
 const updateMenu = (req, res)=>{
     //Desestructurar la peticion
     const {id} = req.params;
-    const {nombre, platoPrincipal, bebida, precio} = req.body;
+    const {nombre, descripcion, imagen, platoPrincipal, bebida, precio} = req.body;
 
     // Consulta con marcadores 
-    const sql = 'UPDATE menus SET nombre = ?, platoPrincipal = ?, bebida = ?, precio = ?  WHERE id = ?';
+    const sql = 'UPDATE menus SET nombre = ?, descripcion = ?, imagen = ?, platoPrincipal = ?, bebida = ?, precio = ? WHERE id = ?';
 
     // Pasar la consulta
-    db.query(sql, [nombre, platoPrincipal, bebida, precio, id], (error, result)=>{
+    db.query(sql, [nombre, descripcion, imagen, platoPrincipal, bebida, precio, id], (error, result)=>{
         //Si sucede un error
         if(error){throw error};
         //Si todo sale bien
